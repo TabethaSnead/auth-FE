@@ -12,8 +12,6 @@ form.addEventListener('submit', async (e) => {
         password,
     };
 
-    console.log(userData);
-
     const res = await fetch('http://localhost:7890/auth/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
